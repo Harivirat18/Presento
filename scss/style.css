@@ -1,0 +1,473 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: "Poppins", sans-serif;
+}
+
+header {
+  padding: 20px 10px;
+  position: fixed;
+  width: 100%;
+  top: 0;
+  right: 0;
+  box-shadow: 0px 2px 10px rgba(0, 0, 0, 0.1);
+  background-color: white;
+  z-index: 5;
+}
+header .nav {
+  width: 100%;
+  max-width: 1320px;
+  margin: 0 auto;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+header .nav .nav-left h1 {
+  font-size: 30px;
+  font-weight: 500;
+}
+header .nav .nav-left h1 span {
+  color: #E03a3c;
+}
+header .nav .nav-right ul {
+  display: flex;
+  gap: 27px;
+  list-style-type: none;
+}
+header .nav .nav-right ul li {
+  font-weight: 500;
+}
+header .nav .nav-right ul li a {
+  text-decoration: none;
+  color: black;
+  font-size: 15px;
+}
+header .nav .nav-right ul li a:hover {
+  color: #E03a3c;
+}
+header .nav .nav-right ul li:nth-child(9) a {
+  margin-left: 30px;
+  background: #e03a3c;
+  color: #fff;
+  border-radius: 4px;
+  padding: 8px 25px;
+  transition: 0.3s;
+  font-size: 14px;
+  font-weight: 600;
+}
+header .nav .nav-right ul li:nth-child(9) a:hover {
+  background-color: black;
+}
+
+.background {
+  background: linear-gradient(to bottom, rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.7)), url(../img/hero-bg.jpg);
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  height: 100vh;
+  width: 100%;
+}
+.background .background-content {
+  color: white;
+  max-width: 1320px;
+  width: 100%;
+  margin: 0 auto;
+  display: flex;
+  align-items: center;
+  padding: 0px 10px;
+  height: 100vh;
+}
+.background .background-content > div {
+  width: 50%;
+  padding: 0px 10px;
+}
+.background .background-content > div h1 {
+  font-size: 48px;
+  font-weight: 600;
+  line-height: 60px;
+}
+.background .background-content > div p {
+  font-size: 24px;
+  margin-top: 10px;
+  line-height: 30px;
+  padding-bottom: 50px;
+}
+.background .background-content > div a {
+  text-decoration: none;
+  color: white;
+  padding: 10px 30px;
+  border-radius: 5px;
+  transition: 0.3s;
+  background-color: #E03a3c;
+}
+.background .background-content > div a:hover {
+  background: none;
+  border: 1px solid white;
+}
+
+.company {
+  width: 100%;
+  max-width: 1320px;
+  margin: 0 auto;
+  padding: 40px 10px;
+}
+.company > div {
+  display: flex;
+  flex-wrap: wrap;
+  align-items: center;
+  justify-content: space-between;
+  padding: 20px 0px;
+}
+.company > div img {
+  max-width: 100%;
+  width: 12%;
+  filter: grayscale(100%);
+  opacity: 0.5;
+}
+.company > div img:hover {
+  filter: none;
+  opacity: 1;
+}
+
+.about {
+  color: #fff;
+  position: relative;
+  padding: 150px 0px;
+}
+.about::after {
+  background-color: #1b1b1b;
+  transform: skewY(-3deg);
+  content: "";
+  position: absolute;
+  bottom: 60px;
+  top: 60px;
+  left: 0;
+  right: 0;
+  z-index: -1;
+}
+.about > div {
+  display: flex;
+  flex-wrap: wrap;
+  align-items: center;
+  justify-content: space-between;
+  width: 100%;
+  max-width: 1320px;
+  margin: 0 auto;
+  padding: 0px 10px;
+}
+.about > div .about-left {
+  width: 34%;
+}
+.about > div .about-left h1 {
+  font-size: 34px;
+  margin-bottom: 30px;
+}
+.about > div .about-left p {
+  font-size: 16px;
+  margin-bottom: 40px;
+  line-height: 1.5;
+}
+.about > div .about-left a {
+  text-decoration: none;
+  padding: 10px 30px;
+  border: 1px solid #E03a3c;
+  border-radius: 50px;
+  color: white;
+  transition: 0.3s;
+}
+.about > div .about-left a:hover {
+  border: none;
+  background-color: #E03a3c;
+}
+.about > div .about-mid {
+  width: 30%;
+}
+.about > div .about-mid h3 {
+  font-size: 20px;
+  margin-bottom: 10px;
+}
+.about > div .about-mid p {
+  font-size: 15px;
+  color: #848484;
+  margin-bottom: 16px;
+}
+.about > div .about-mid i {
+  color: #E03a3c;
+  margin-bottom: 25px;
+  font-size: 30px;
+}
+.about > div .about-right {
+  width: 30%;
+}
+.about > div h3 {
+  font-size: 20px;
+  margin-bottom: 10px;
+}
+.about > div p {
+  font-size: 15px;
+  color: #848484;
+  margin-bottom: 16px;
+}
+.about > div i {
+  color: #E03a3c;
+  margin-bottom: 25px;
+  font-size: 30px;
+}
+
+.number .count {
+  width: 100%;
+  max-width: 1320px;
+  margin: 0 auto;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  flex-wrap: wrap;
+  gap: 20px;
+}
+.number .count div {
+  width: 23%;
+  padding: 25px;
+  border: 1px solid white;
+  background-color: white;
+  box-shadow: 0px 2px 10px #d1c0c0;
+  text-align: center;
+  position: relative;
+}
+.number .count div h2 {
+  font-size: 36px;
+}
+.number .count div h3 {
+  font-size: 14px;
+  color: #444;
+}
+.number .count div i {
+  position: absolute;
+  top: -20px;
+  left: 44%;
+  font-size: 25px;
+  background-color: white;
+  box-shadow: 1px 2px 10px #d1c0c0;
+  border-radius: 50%;
+  padding: 10px 12px;
+  color: #E03a3c;
+}
+
+.black {
+  background-color: rgba(52, 54, 62, 0.9607843137);
+  color: #fff;
+  padding-bottom: 125px;
+  padding-top: 100px;
+  margin: 50px 0px;
+}
+.black > div {
+  width: 1320px;
+  margin: 0 auto;
+}
+.black h3 {
+  padding: 20px 0px;
+  font-size: 28px;
+}
+.black ul {
+  list-style-type: none;
+}
+.black ul .border {
+  border-bottom: 1px solid #ddd;
+  padding: 20px 0px;
+}
+.black ul .border a {
+  font-size: 17px;
+  font-weight: bold;
+}
+.black ul .border i {
+  font-size: 12px;
+  float: right;
+  cursor: pointer;
+}
+
+.team {
+  color: #fff;
+  position: relative;
+  padding: 150px 0px;
+}
+.team::after {
+  background-color: #1b1b1b;
+  transform: skewY(-3deg);
+  content: "";
+  position: absolute;
+  bottom: 60px;
+  top: 60px;
+  left: 0;
+  right: 0;
+  z-index: -1;
+}
+.team .team-content {
+  display: flex;
+  flex-wrap: wrap;
+  align-items: center;
+  justify-content: space-between;
+  width: 100%;
+  max-width: 1320px;
+  margin: 0 auto;
+  padding: 0px 10px;
+}
+.team .team-content .content-left {
+  width: 49%;
+}
+.team .team-content .content-left .box {
+  display: flex;
+  gap: 20px;
+  padding: 20px;
+  margin-bottom: 30px;
+  background-color: #252525;
+}
+.team .team-content .content-left .box i {
+  color: #E03a3c;
+  font-size: 20px;
+}
+.team .team-content .content-left .box h3 {
+  margin-bottom: 20px;
+  font-size: 20px;
+}
+.team .team-content .content-right {
+  width: 49%;
+}
+.team .team-content .content-right .box {
+  display: flex;
+  gap: 20px;
+  padding: 20px;
+  margin-bottom: 30px;
+  background-color: #252525;
+}
+.team .team-content .content-right .box i {
+  color: #E03a3c;
+  font-size: 20px;
+}
+.team .team-content .content-right .box h3 {
+  font-size: 20px;
+  margin-bottom: 20px;
+}
+
+.portfolio {
+  width: 100%;
+  max-width: 1320px;
+  margin: 0 auto;
+  text-align: center;
+}
+.portfolio h2 {
+  text-transform: uppercase;
+  position: relative;
+  margin-bottom: 20px;
+}
+.portfolio h2::after {
+  position: absolute;
+  content: "";
+  background-color: #E03a3c;
+  height: 3px;
+  width: 50px;
+  bottom: 0;
+  left: 48%;
+  right: 50%;
+  margin: auto;
+}
+.portfolio h2 p {
+  margin-bottom: 20px;
+}
+.portfolio div {
+  display: flex;
+  flex-wrap: wrap;
+  margin-bottom: 20px;
+}
+.portfolio div img {
+  max-width: 100%;
+  width: 33%;
+  padding: 10px;
+  transition: 0.3s;
+  object-fit: contain;
+}
+.portfolio div img:hover {
+  transform: scale(1.1);
+  overflow: hidden;
+}
+
+.blog {
+  width: 100%;
+  max-width: 1320px;
+  margin: 0 auto;
+  display: flex;
+  flex-wrap: wrap;
+  align-items: center;
+  justify-content: space-between;
+}
+.blog div {
+  width: 48%;
+  padding-right: 15px;
+}
+.blog div h2 {
+  margin-bottom: 20px;
+}
+.blog div p {
+  margin-bottom: 20px;
+  font-style: italic;
+}
+.blog div img {
+  max-width: 100%;
+}
+.blog div Ul {
+  list-style-type: none;
+}
+.blog div Ul li {
+  margin-bottom: 15px;
+}
+.blog div Ul li i {
+  color: #E03a3c;
+  font-size: 18px;
+  padding-right: 10px;
+}
+
+footer {
+  background-color: #252525;
+  color: white;
+  padding: 50px 0px;
+}
+footer .foot {
+  width: 100%;
+  max-width: 1320px;
+  margin: 0 auto;
+  display: flex;
+  flex-wrap: wrap;
+}
+footer .foot .address {
+  width: 20%;
+}
+footer .foot .social1 {
+  width: 20%;
+}
+footer .foot .last {
+  width: 40%;
+}
+footer .foot .last ul li {
+  position: relative;
+}
+footer .foot .last ul li input {
+  border: none;
+  outline: none;
+  height: 40px;
+  width: 100%;
+}
+footer .foot .last ul li span {
+  position: absolute;
+  right: 0;
+  bottom: 0;
+  background-color: #E03a3c;
+  height: 40px;
+  line-height: 40px;
+  text-align: center;
+  padding: 0px 10px;
+}
+footer .foot ul {
+  list-style-type: none;
+}
+footer .foot ul li {
+  line-height: 2;
+}/*# sourceMappingURL=style.css.map */
